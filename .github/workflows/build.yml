@@ -1,5 +1,5 @@
 name: Server Status Actions
-run-name: ${{ gitea.actor }} is producting out Gitea Actions
+run-name: ${{ github.actor }} is producting out Gitea Actions
 on:
   workflow_dispatch:
   push:
