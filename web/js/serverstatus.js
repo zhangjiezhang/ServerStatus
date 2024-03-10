@@ -139,8 +139,8 @@ function uptime() {
 			TableRow.children["type"].innerHTML = result.servers[i].type;
 
 			// Location
-			TableRow.children["location"].innerHTML = result.servers[i].location;
-			MableRow.children["monitor_location"].innerHTML = result.servers[i].location;
+			TableRow.children["location"].innerHTML = "<img src='/image/flags/" + result.servers[i].location + ".svg' />";
+			MableRow.children["monitor_location"].innerHTML = "<img src='/image/flags/" + result.servers[i].location + ".svg' />";
 			if (!result.servers[i].online4 && !result.servers[i].online6) {
 				if (server_status[i]) {
 					TableRow.children["uptime"].innerHTML = "–";
