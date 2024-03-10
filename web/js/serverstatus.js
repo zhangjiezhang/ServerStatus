@@ -287,7 +287,7 @@ function uptime() {
                 var PING_10086 = result.servers[i].ping_10086.toFixed(0);
 
 				// ping ms + lost rate
-				ExpandRow[0].children["expand_ping"].innerHTML = "CU/CT/CM: " + result.servers[i].time_10010 + "ms ("+result.servers[i].ping_10010.toFixed(0)+"%) / " + result.servers[i].time_189 + "ms ("+result.servers[i].ping_189.toFixed(0)+"%) / " + result.servers[i].time_10086 + "ms ("+result.servers[i].ping_10086.toFixed(0)+"%)"
+				ExpandRow[0].children["expand_ping"].innerHTML = "联通/电信/移动: " + result.servers[i].time_10010 + "ms ("+result.servers[i].ping_10010.toFixed(0)+"%) / " + result.servers[i].time_189 + "ms ("+result.servers[i].ping_189.toFixed(0)+"%) / " + result.servers[i].time_10086 + "ms ("+result.servers[i].ping_10086.toFixed(0)+"%)"
 
                 if (PING_10010 >= 20 || PING_189 >= 20 || PING_10086 >= 20)
                     TableRow.children["ping"].children[0].children[0].className = "progress-bar progress-bar-danger";
