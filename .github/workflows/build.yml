@@ -25,4 +25,4 @@ jobs:
           context: ServerStatus
           file: ServerStatus/Dockerfile
           push: true
-          tags: ${{ env.DOCKERHUB_NAMESPACE }}/${{ env.APP_NAME }}:${{ env.GITHUB_RUN_NUMBER }}
+          tags: ${{ env.DOCKERHUB_NAMESPACE }}/${{ env.APP_NAME }}:${{ github.run_number }}
