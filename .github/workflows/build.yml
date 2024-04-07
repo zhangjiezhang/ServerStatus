@@ -14,23 +14,20 @@ jobs:
     steps:
       - name: Check out ServerStatus
         uses: actions/checkout@v3
-      - name: Setup pnpm
+      - name: Setup npm
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          cache: 'pnpm'
+          cache: 'npm'
       - name: Build Theme
         run: |
           cd Theme-Light
-          pnpm i 
-          pnpm build
-          ls -al
+          npm i 
+          npm run build
       - name: Mv theme
         run: |
           mv Theme-Light/dist web/light
           rm -rf Theme-Light
-          cd web
-          mv light/index.html index2.html
       - name: Login local Dockerhub
         uses: docker/login-action@v3.0.0
         with:
