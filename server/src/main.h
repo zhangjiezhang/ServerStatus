@@ -35,6 +35,7 @@ class CMain
 		char m_aType[128];
 		char m_aHost[128];
 		char m_aLocation[128];
+		char m_aLabels[128];
 		char m_aPassword[128];
         int m_aMonthStart;          //track month network traffic. by: https://cpp.la
 
