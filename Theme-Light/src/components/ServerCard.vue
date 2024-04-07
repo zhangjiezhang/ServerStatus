@@ -44,7 +44,10 @@
         :src="`/image/os/${labels.os}.svg`" :alt="`${labels.os} os`"
         class="h-4 inline-block rounded-sm"
       >
-      {{ server.alias || server.name }}
+      {{ server.type }}
+    </div>
+    <div> 
+      名称 {{ server.alias || server.name }}
     </div>
     <div>
       运行时间

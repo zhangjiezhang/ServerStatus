@@ -34,6 +34,9 @@
         class="h-4 inline-block rounded-sm"
       >
       <span class="whitespace-nowrap overflow-ellipsis">
+        {{ server.type }}
+      </span>
+      <span class="whitespace-nowrap overflow-ellipsis">
         {{ server.alias || server.name }}
       </span>
       <Bandage>
